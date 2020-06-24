@@ -1,8 +1,14 @@
 # Multi-Objective Decision Analysis (MODA): Progressive Articulation of Preferences with Method of Geoffrion, Interval Programming, and The Step Method
 
 ## Background and Motivation
+Multiple-Objective Decision Analysis is a robust decision technique that evaluate objectives and measures in terms of value to select from a set of alternatives. The problem of MODA can be represents as follow.
+$$Max/Min F(x)=[f_{1}(x),..,f_{k}(x),...,f_{K}(x)]$$
+$$s.t. A=\{x|g_{i}(x)<\leq,=,\geq>0,i=1,...,m,x\geq, x \in R^{n}\}$$
+$f_{k}(x)$ is a objective function. Through setting objective function, we could formulate the feasible solution region and get the set of feasible solution. Decision maker makes final decision from this valid set according to the preference decision maker. 
 ## Methodology
 ### STEM
+
+## Example and Applications
 The Step method (STEM) is a progressive method in decision making. First, the matrix $r_{ik}$ is constructed by the collected data or subjective assessment. Through $r_{i}^{\*}$, we can decide the optimal action $a_{i}^{\*}$. However, it is usually an infeasible solution. Hence, the best choice is most close ideal action.
 
 $$w_{i}=\frac{\alpha_{i}}{\sum_{i}\alpha_{i}}$$
@@ -24,7 +30,6 @@ $$\alpha_{3}=\frac{5-1}{5}(1+9+16+25)^{\frac{-1}{2}}=0.111 \quad w_{3}=0.112/0.3
 $\quad \quad \quad \quad \alpha_{4}=0$
 $$\alpha_{5}=\frac{4-2}{4}(4+9+16+16)^{\frac{-1}{2}}=0.075 \quad w_{5}=0.075/0.387=0.19$$
 $\quad \quad \quad \quad \sum{\alpha_{i}}=0.387$
-## Example and Applications
 ## Comments
 ## Reference
 1. Lecture notes : Multi-Objective Decision Analysis
