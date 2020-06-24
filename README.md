@@ -7,6 +7,10 @@ $$s.t. A=\{x|g_{i}(x)<\leq,=,\geq>0,i=1,...,m,x\geq, x \in R^{n}\}$$
 $f_{k}(x)$ is a objective function. Through setting objective function, we could formulate the feasible solution region and get the set of feasible solution. Decision maker makes final decision from this valid set according to the preference decision maker. 
 ## Methodology
 ### STEM
+The Step Method is mainly separated into three parts and we will introduce these in this section.
+First, In order to construct a payoff table in following graph, we need to solve K linear programming constraints. Let $z_{k}^{M}$ be the optimal value and $z_{k}^{p}$ the objective function value of $x_{k}^{\*}$. In addition, we define $z_{k}^{m}=Min{z_{k}^{p}:p=1,2,...,K}$ and can construct payoff table as following graph.
+$$Max z_{k}(x)=\sum_{j=1}^{n}c_{kj}x_{j} \quad k=1,2,....,K$$
+<img src="payoff_table.png" width="1000px" />
 
 ## Example and Applications
 The Step method (STEM) is a progressive method in decision making. First, the matrix $r_{ik}$ is constructed by the collected data or subjective assessment. Through $r_{i}^{\*}$, we can decide the optimal action $a_{i}^{\*}$. However, it is usually an infeasible solution. Hence, the best choice is most close ideal action.
@@ -31,6 +35,7 @@ $\quad \quad \quad \quad \alpha_{4}=0$
 $$\alpha_{5}=\frac{4-2}{4}(4+9+16+16)^{\frac{-1}{2}}=0.075 \quad w_{5}=0.075/0.387=0.19$$
 $\quad \quad \quad \quad \sum{\alpha_{i}}=0.387$
 ## Comments
+Through using multiple objective linear programming, we can handle multiple objectives and know which solution is optimal.
 ## Reference
 1. Lecture notes : Multi-Objective Decision Analysis
 2. 王小璠，2005，多準則決策分析，滄海書局
