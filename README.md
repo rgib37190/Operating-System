@@ -11,14 +11,15 @@ The Step Method is mainly separated into three parts and we will introduce these
 First, In order to construct a payoff table in following graph, we need to solve K linear programming constraints. Let $z_{k}^{M}$ be the optimal value and $z_{k}^{p}$ the objective function value of $x_{k}^{\*}$. In addition, we define $z_{k}^{m}=Min{z_{k}^{p}:p=1,2,...,K}$ and can construct payoff table as following graph.
 $$Max z_{k}(x)=\sum_{j=1}^{n}c_{kj}x_{j} \quad k=1,2,....,K$$
 <img src="payoff_table.png" width="1000px" />
-Second, we need to find an nondominated solution which is nearest to the ideal point.
+Second, we need to find an nondominated solution which is nearest to the ideal point. So we need to use the following equation to minimize and find the optimal value $d_{k}$.
+<img src="part2.PNG" width="1000px" />
+$$w_{i}=\frac{\alpha_{i}}{\sum_{i}\alpha_{i}}$$
+$$where \quad \alpha_{i}=[\frac{r_{i.}^{\*}-r_{-i.}}{\sum_{k}r_{ik}^2}][\sum_{k}r_{ik}^2]^{\frac{1}{2}}, \text{for larger reward} \ r_{ik}$$
+
+$$\quad \quad \quad \quad \alpha_{i}=[\frac{r_{-i.}-r_{i.}^{\*}}{r_{-i.}}][\sum_{k}{r_{ik}^2}]^{\frac{1}{2}}, \text{for smaller reward} \ r_{ik}$$
+
 ## Example and Applications
 The Step method (STEM) is a progressive method in decision making. First, the matrix $r_{ik}$ is constructed by the collected data or subjective assessment. Through $r_{i}^{\*}$, we can decide the optimal action $a_{i}^{\*}$. However, it is usually an infeasible solution. Hence, the best choice is most close ideal action.
-
-$$w_{i}=\frac{\alpha_{i}}{\sum_{i}\alpha_{i}}$$
-$$where \quad \alpha_{i}=[\frac{r_{i.}^{*}-r_{-i.}}{\sum_{k}r_{ik}^2}][\sum_{k}r_{ik}^2]^{\frac{1}{2}}, \text{for larger reward} \ r_{ik}$$
-
-$$\quad \quad \quad \quad \alpha_{i}=[\frac{r_{-i.}-r_{i.}^{*}}{r_{-i.}}][\sum_{k}{r_{ik}^2}]^{\frac{1}{2}}, \text{for smaller reward} \ r_{ik}$$
 
 | attribute\Program | history cost $r_{i1}$ | GPLH $r_{i2}$ | replacement cost $r_{i3}$ | export value $r_{i4}$ | ideal value $a_{i.}^{\*}$ |
 | ----------------- | :-------------------: | :-----------: | :-----------------------: | :--------------------: | :-----------------------: |
