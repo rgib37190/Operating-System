@@ -18,6 +18,10 @@ $$where \quad \alpha_{i}=[\frac{r_{i.}^{\*}-r_{-i.}}{\sum_{k}r_{ik}^2}][\sum_{k}
 
 $$\quad \quad \quad \quad \alpha_{i}=[\frac{r_{-i.}-r_{i.}^{\*}}{r_{-i.}}][\sum_{k}{r_{ik}^2}]^{\frac{1}{2}}, \text{for smaller reward} \ r_{ik}$$
 
+Final, if decision maker can fullfill the solution $x^{r}$ of the above pattern, the method was ended. Otherwise, we need to ask decision maker which objective function need to be loose. Suppose the objective function is $z_{l}$ and the degree of loose is $\Delta z_{l}$.
+<img src="part3.PNG" width="500px" />
+
+Let ${z_{l}}=H_{r}$ are multiple objective function at $r$-th repeated steps. $z_{q}, q \neq l$ is the objective function which can not be loose. Beacuse $z_{l}$ can be loose, the optimization process can be stopped and set relative weight of $z_{l}$ zero ($w_{l}=0 (\alpha_{l}=0)$). Final, we come back to step 2.
 ## Example and Applications
 The Step method (STEM) is a progressive method in decision making. First, the matrix $r_{ik}$ is constructed by the collected data or subjective assessment. Through $r_{i}^{\*}$, we can decide the optimal action $a_{i}^{\*}$. However, it is usually an infeasible solution. Hence, the best choice is most close ideal action.
 
