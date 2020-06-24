@@ -1,1 +1,31 @@
-# Operating-System
+# Multi-Objective Decision Analysis (MODA): Progressive Articulation of Preferences with Method of Geoffrion, Interval Programming, and The Step Method
+
+## Background and Motivation
+## Methodology
+### STEM
+The Step method (STEM) is a progressive method in decision making. First, the matrix $r_{ik}$ is constructed by the collected data or subjective assessment. Through $r_{i}^{\*}$, we can decide the optimal action $a_{i}^{\*}$. However, it is usually an infeasible solution. Hence, the best choice is most close ideal action.
+
+$$w_{i}=\frac{\alpha_{i}}{\sum_{i}\alpha_{i}}$$
+$$where \quad \alpha_{i}=[\frac{r_{i.}^{*}-r_{-i.}}{\sum_{k}r_{ik}^2}][\sum_{k}r_{ik}^2]^{\frac{1}{2}}, \text{for larger reward} \ r_{ik}$$
+
+$$\quad \quad \quad \quad \alpha_{i}=[\frac{r_{-i.}-r_{i.}^{*}}{r_{-i.}}][\sum_{k}{r_{ik}^2}]^{\frac{1}{2}}, \text{for smaller reward} \ r_{ik}$$
+
+| attribute\Program | history cost $r_{i1}$ | GPLH $r_{i2}$ | replacement cost $r_{i3}$ | export value $r_{i4}$ | ideal value $a_{i.}^{\*}$ |
+| ----------------- | :-------------------: | :-----------: | :-----------------------: | :--------------------: | :-----------------------: |
+| Associativity | $\underline{1}$ | 2 | 4 | $5^{\*}$ | 5 |  
+| Objectivity | $5^{\*}$ | 4 | 3 | $\underline{2}$ | 5 |
+| Releasability | $\underline{1}$ | 3 | 4 | $5^{\*}$ | 5 |
+| Measurability | $5^{\*}$ | $5^{\*}$ | $5^{\*}$ | $5^{\*}$ | 5 | 
+| Comparable | $\underline{2}$ | 3 | $4^{\*}$ | $4^{\*}$ | 4 | 
+
+$$\alpha_{1}=\frac{5-1}{5}(1+4+16+25)^{\frac{-1}{2}}=0.118 \quad w_{1}=0.118/0.387=0.31$$
+$$\alpha_{2}=\frac{5-2}{5}(25+16+9+4)^{\frac{-1}{2}}=0.082 \quad w_{2}=0.082/0.387=0.21$$
+$$\alpha_{3}=\frac{5-1}{5}(1+9+16+25)^{\frac{-1}{2}}=0.111 \quad w_{3}=0.112/0.387=0.29$$
+$\quad \quad \quad \quad \alpha_{4}=0$
+$$\alpha_{5}=\frac{4-2}{4}(4+9+16+16)^{\frac{-1}{2}}=0.075 \quad w_{5}=0.075/0.387=0.19$$
+$\quad \quad \quad \quad \sum{\alpha_{i}}=0.387$
+## Example and Applications
+## Comments
+## Reference
+1. Lecture notes : Multi-Objective Decision Analysis
+2. 王小璠，2005，多準則決策分析，滄海書局
